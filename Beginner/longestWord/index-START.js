@@ -6,7 +6,14 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 
 
 function longestWord(text) {
-    // Code goes here
+    let arr = text.split(' ')
+
+    return arr.reduce((a,b) => {
+        if(a.length < b.length){
+            a = b
+        }
+        return a
+    })
 }
 
 

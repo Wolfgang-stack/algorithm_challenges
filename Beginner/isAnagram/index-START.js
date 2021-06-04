@@ -8,7 +8,11 @@ don't. E.g
 
 
 function isAnagram(stringA, stringB) {
-    // Code goes here
+    function makeTestString(str){
+        return str.split('').sort().join('')
+    }
+
+    return makeTestString(stringA) === makeTestString(stringB)
 }
 
 

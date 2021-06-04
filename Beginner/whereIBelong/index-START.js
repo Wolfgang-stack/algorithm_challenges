@@ -10,8 +10,14 @@ than 1(index 0), but less than 2(index 1).
 
 
 function whereIBelong(arr, num) {
-   // Code goes here
-
+   
+   let result = 0
+   for(let i = 0; i < arr.length; i++){
+      if(num > arr[i] && num <= arr[i+1]){
+         result = i+1
+      }
+   }
+ return result
 }
 
 
